@@ -25,7 +25,7 @@ qemu-system-arm \
 	-cpu cortex-a15 \
 	-m 1024 \
 	-append "console=ttyAMA0,115200 root=/dev/vda rootwait" \
-	-kernel iotgoat-armvirt-32-zImage \
+	-kernel iotgoat-armvirt-32.zImage \
 	-hda iotgoat-armvirt-32-root.squashfs \
 	-device virtio-net-pci,netdev=lan \
 	-netdev tap,id=lan,ifname=tap0,script=no,downscript=no \
